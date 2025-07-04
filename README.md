@@ -41,13 +41,13 @@ Funcionalidades planejadas:
    ```
 
 2. Crie e ative um ambiente virtual:
-  # Windows
+  #### Windows
   ```bash
   python -m venv env
   env\Scripts\activate
   ```
 
-  # Linux/macOS
+  #### Linux/macOS
   ```bash
   python3 -m venv env
   source env/bin/activate
