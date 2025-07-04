@@ -42,34 +42,40 @@ Funcionalidades planejadas:
 
 2. Crie e ative um ambiente virtual:
   #### Windows
+  
   ```bash
   python -m venv env
   env\Scripts\activate
   ```
 
   #### Linux/macOS
+  
   ```bash
   python3 -m venv env
   source env/bin/activate
   ```
 
 3. Instale as dependências:
+
   ```bash
   pip install django==5.0
   ```
 
 4. Execute as migrações do banco de dados:
+
   ```bash
   python manage.py makemigrations {app_name}
   python manage.py migrate
   ```
 
 5. Inicie o servidor de desenvolvimento:
+
   ```bash
   python manage.py runserver
   ```
 
 6. Acesse a aplicação no navegador:
+
   ```bash
   http://127.0.0.1:8000/
   ```
