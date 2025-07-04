@@ -6,6 +6,10 @@ Sistema web desenvolvido com **Django 5.0** e **Python 3.10** para registrar e g
 
 O **Controle de Visitantes** tem como propósito fornecer uma plataforma simples e eficiente para porteiros e administradores registrarem, acompanharem e visualizarem o fluxo de visitantes em tempo real, garantindo segurança e rastreabilidade.
 
+<div style="text-align: center;">
+  <img src="img/componentes_controle_visitantes.png" width="750"/>
+</div>
+
 Funcionalidades planejadas:
 
 - Cadastro e autenticação de porteiros e administradores
