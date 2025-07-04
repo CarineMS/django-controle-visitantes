@@ -5,12 +5,12 @@ class Porteiro(models.Model):
     usuario = models.OneToOneField(
         "usuarios.Usuario",
         verbose_name="Usuário",
-        on_delete=models.PROTECT
+        on_delete=models.PROTECT,
     )
     
     nome_completo = models.CharField(
         verbose_name="Nome completo",
-        max_length=194
+        max_length=194,
     )
 
     cpf = models.CharField(
@@ -30,9 +30,9 @@ class Porteiro(models.Model):
     )
 
     class Meta:
-        verbose_name = "Porteiro",
-        verbose_name_plural = "Porteiros",
-        db_table = "porteiro",
+        verbose_name = "Porteiro"
+        verbose_name_plural = "Porteiros"
+        db_table = "porteiro"
 
     def __str__(self):
         return self.nome_completo
