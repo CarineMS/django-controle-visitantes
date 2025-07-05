@@ -14,6 +14,12 @@
                 Formulário para registro de novo visitante
             </h4>
             
+            <p class=""mb-5 ml-1>
+                <small>
+                    O asterísco (*) indica que o campo é obrigatório
+                </small>
+            </p>
+
             <form method="post">
                 <div class="form-row">
                     {% csrf_token %}
@@ -25,6 +31,13 @@
                     </div>
                     {% endfor %}
                 </div>
+
+                <div class="text-right">
+                    <button class="btn btn-primary" type="submit">
+                        <span class="text">Registrar visitante</span>
+                    </button>
+                </div>
+
             </form>
             
         </div>
