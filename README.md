@@ -17,7 +17,6 @@ Funcionalidades planejadas:
 - Registro de visitantes atualmente no condomínio
 - Histórico de visitas finalizadas
 - Listagem dos visitantes do mês
-- Interface visual e intuitiva com ícones e cards informativos
 
 ## 🧰 Tecnologias utilizadas
 
@@ -85,23 +84,67 @@ Funcionalidades planejadas:
 
 ## 🗂️ Estrutura do projeto
    ```c#
-   controle-visitantes/
-   │
-   ├── manage.py
-   ├── static/               # Arquivos estáticos (CSS, JS, vendor)
-   ├── templates/            # Templates HTML
-   ├── usuarios/             # App responsável pelos usuários (porteiros)
-   ├── porteiros/            # App responsável pelos registros de visitantes
-   ├── controle_visitantes/  # Configurações principais do Django
-   └── db.sqlite3            # Banco de dados local
+  controle-visitantes/
+  │
+  ├── manage.py                   # Comando principal do Django
+  ├── db.sqlite3                  # Banco de dados local
+  ├── .gitignore                  # Git ignore padrão
+  ├── README.md                   # Documentação do projeto
+  │
+  ├── apps/                       # Aplicativos da regra de negócio
+  │   ├── dashboard/              # Página inicial e dashboard do sistema
+  │   ├── porteiros/              # App responsável pelos registros dos porteiros
+  │   ├── usuarios/               # App de autenticação e gerenciamento de usuários
+  │   └── visitantes/             # App responsável pelo controle de visitantes
+  │
+  ├── controle_visitantes/       # Configurações principais do Django (settings, urls, wsgi)
+  │
+  ├── static/                     # Arquivos estáticos compartilhados (CSS, JS, vendor)
+  │
+  ├── templates/                  # Templates HTML globais (base.html, login.html etc)
+  │
+  └── img/                        # Imagens utilizadas no sistema e documentação
+
    ```
 
-## 📌 Próximos passos
-* Criar autenticação e permissões por perfil
-* Tela de login
-* Integração com banco de dados PostgreSQL (em produção)
-* Dashboard com gráficos
-* Exportação de registros (PDF/Excel)
+## 📌 Páginas
+
+1. Página de Login
+   
+  <div style="text-align: center;">
+    <img src="img/login_page.jpg" width="500"/>
+  </div>
+  
+2. Página Inicial
+   
+  <div style="text-align: center;">
+    <img src="img/index_page.jpg" width="500"/>
+  </div>
+
+3. Página Administrativa
+   
+  <div style="text-align: center;">
+    <img src="img/admin_page.jpg" width="500"/>
+  </div>
+  
+4. Página de Registrar Visitantes
+   
+  <div style="text-align: center;">
+    <img src="img/registrar_visitante_page.jpg" width="500"/>
+  </div>
+  
+5. Página sobre Informações de Visitantes
+   
+  <div style="text-align: center;">
+    <img src="img/informacoes_visitante_page.jpg" width="500"/>
+  </div>
+  
+6. Página de Logout
+   
+  <div style="text-align: center;">
+    <img src="img/logout_page.jpg" width="500"/>
+  </div>
+  
 
 ## 📄 Licença
 Este projeto é de uso educacional e livre para modificação. Você pode adaptá-lo conforme necessário.
