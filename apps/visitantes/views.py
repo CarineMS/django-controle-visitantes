@@ -81,7 +81,7 @@ def finalizar_visita(request, id):
 
     if request.method == "POST":
         visitante = get_object_or_404(
-            visitante,
+            Visitante,
             id=id
         )
 
